@@ -48,53 +48,50 @@ $usuario   = $_SESSION['usuarioNome'];
 <!-- começo do wrapper -->
     <div class="page-wrapper default-theme sidebar-bg bg1 toggled">
         <nav id="sidebar" class="sidebar-wrapper">
-
             <div class="sidebar-content">
                 <!-- sidebar-brand  -->
-                <div class="sidebar-item sidebar-brand">
-                    <a href="#">CLD 2020</a>
-                    
-                    <a id="toggle-sidebar" class="btn" href="#">
-                            <i class="fas fa-bars"></i>
-                        </a>
-                </div>
+              <div class="sidebar-item sidebar-brand">
+                <a href="#">CLD 2020</a>   
+
+                 <a id="toggle-sidebar" class="btn" href="#">
+                
+                   <i class="fas fa-bars"></i>
+                  
+                 </a>   
+              </div> 
 
 
-                    
+           
                 <!-- sidebar-header  -->
-                <div class="sidebar-item sidebar-header d-flex flex-nowrap">
-                    <div class="user-pic">
-                        <img class="img-responsive img-rounded" src="src/img/user.jpg" alt="User picture">
-                    </div>
+              <div class="sidebar-item sidebar-header d-flex flex-nowrap">
+                  <div class="user-pic">
+                      <img class="img-responsive img-rounded" src="src/img/user.jpg" alt="User picture">
+                  </div>
 
-                    <div class="user-info">
-                        <span class="user-name">
-                          <?php
-                          echo "".$_SESSION['usuarioNome'];;
-                          ?>
-                          
-                        </span>
+                  <div class="user-info">
+                      <span class="user-name">
+                        <?php echo "".$_SESSION['usuarioNome'];?> 
+                      </span>
                         
-                        <span class="user-status">
-                            <i class="fa fa-circle"></i>
-                            <span>Online</span>
-                        </span>
-                    </div>
-                </div>
-            
+                      <span class="user-status">
+                          <i class="fa fa-circle"></i>
+                           <span>Online</span>
+                      </span>
+                  </div>
+              </div>
                 <!-- sidebar-menu  -->
-                <div class=" sidebar-item sidebar-menu">
-                    <ul>
-                        <li class="header-menu">
+              <div class=" sidebar-item sidebar-menu">
+                  <ul>
+                      <li class="header-menu">
                             <span>Menu</span>
-                        </li>
-                        <li class="sidebar-dropdown">
-                            <a href="#">
-                                <i class="fa fa-user-graduate"></i>
-                                <span class="menu-text"> Alunos </span>
-                                
-                            </a>
-                            <div class="sidebar-submenu">
+                     </li>
+
+                      <li class="sidebar-dropdown">
+                         <a href="#">
+                            <i class="fa fa-user-graduate"></i>
+                              <span class="menu-text"> Alunos </span>      
+                         </a>
+                             <div class="sidebar-submenu">
                                 <ul>
                                     <li>
                                         <a href="#">Cadastro 
@@ -262,34 +259,42 @@ $usuario   = $_SESSION['usuarioNome'];
         </nav>
 
 
+      
+
     
-        
-            <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
-                <a id="toggle-sidebar" class="btn" href="#">
-                            <i class="fas fa-bars"></i>
-                        </a>
-                        
-                  
+     <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="home.php">Home <span class="sr-only">(current)</span></a>
-                        </li>
-            
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Meu usuário
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Meu perfil</a>
-                                <a class="dropdown-item" href="sair.php">Sair</a>
-                        </li>   
-                    </ul>
-              
-            </nav>
+         <a id="overlay" class="btn" href="#">
+                
+                   <i class="fas fa-bars"></i>
+                  MENU
+                 </a> 
 
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="home.php">Home <span class="sr-only">(current)</span></a>
+            </li>
+           
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Meu usuário
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Meu perfil</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="sair.php">Logout</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+         
+    
 </div>
 
          
@@ -315,14 +320,6 @@ $usuario   = $_SESSION['usuarioNome'];
 
 
     <script src="src/js/main.js"></script>
-
-
-     <script>
-    $("#menu-toggle").click(function(e) {
-      e.preventDefault();
-      $("#wrapper").toggleClass("toggled");
-    });
-  </script>
 
 
 
