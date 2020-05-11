@@ -442,8 +442,7 @@ body {
     margin-right: 0px; }
 
 /*----------sidebar background images --------------*/
-.sidebar-bg.bg1 .sidebar-wrapper {
-  background-image: url(../img/bg1.jpg); }
+
 
 .sidebar-bg.bg2 .sidebar-wrapper {
   background-image: url(../img/bg2.jpg); }
